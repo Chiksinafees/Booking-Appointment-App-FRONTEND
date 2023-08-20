@@ -10,6 +10,7 @@ appointForm.addEventListener("submit", async (e) => {
     number: inputNumber.value,
     email: inputEmail.value,
   };
+  
   await axios
     .post("http://localhost:3000/user/insert", obj)
     .then((response) => {
